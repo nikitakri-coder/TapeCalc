@@ -1,0 +1,28 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tapecalc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="calc" aria-label="Calculator">
+      <section class="tape" aria-label="Calculation history" aria-live="polite">
+        <ol id="history"></ol>
+        <p class="tape-empty" id="tape-empty">Your calculations print here.</p>
+      </section>
+      <section class="screen">
+        <input id="expr" type="text" inputmode="none" autocomplete="off" spellcheck="false" aria-label="Expression" />
+        <output id="result" aria-live="polite"></output>
+      </section>
+      <section class="sci" id="sci" aria-label="Scientific functions"></section>
+      <section class="keys" id="keys"></section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
